@@ -1,0 +1,145 @@
+
+
+body{
+margin: 0;
+padding: 0;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    background-color: rgb(223, 223, 223);
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li{
+    height: 50px;
+    width: 100px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", serif;
+}
+
+.menu ul li:hover{
+    background-color: #c1c1c1;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: contain;
+    align-items: center;
+    border: none;
+    background-origin: 10px;
+    width: 40px;
+    height: 40px;
+    gap: 5px;
+    display: none;
+    background-color: black;
+}
+
+.burger div {
+    width: 80%;
+    height: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+}
+
+@media screen and (max-width: 600px){
+    .burger{
+        display: flex;
+        padding: 5px;
+    }
+    .menu{
+        justify-content: start;
+        padding: 5px;
+    }
+    .menu ul{
+        display: none;
+    }
+}
+
+.main{
+    background-image: url("https://www.hdwallpapers.in/download/apple_laptop_on_table_4k_hd_macbook-3840x2160.jpg");
+    background-size: cover;
+    height: 600px;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h1{
+    font-size: 60px;
+    font-weight: 100;
+    color: white;
+    font-family: "Josefin Sans", serif;
+    text-shadow: 0 0 20px white;
+}
+
+.main p{
+    font-family: "Josefin Sans", serif;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    width: 50%;
+    text-shadow: 0 0 20px white;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.container{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+
+}
+
+.leftSide img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.leftSide{
+    width: 50%;
+}
+
+.rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.rightSide p{
+    width: 70%;
+    text-align: center;
+}
+
